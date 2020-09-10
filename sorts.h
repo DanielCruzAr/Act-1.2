@@ -138,17 +138,16 @@ T Sorts<T>::busqSecuencial(vector<T> &v, int n){
 
 template <class T>
 T Sorts<T>::busqBinaria(vector<T> &v, int n){
-	int central, min, max, valC;
+	int central, min, max;
 	min = 0;
 	max = v.size() - 1;
 	
-	while(min <= max){
+	while(min < max){
 		central = (min + max)/2;
-		valC = v[central];
-		if(n == valC){
+		if(n == v[central]){
 			return central;
 		}
-		else if(n < valC){
+		else if(n < v[central]){
 			max = central - 1;
 		}
 		else{
