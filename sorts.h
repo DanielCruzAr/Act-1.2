@@ -159,7 +159,7 @@ T Sorts<T>::busqBinaria(vector<T> &v, int n){
 			min = central + 1;
 		}
 	}
-	return -1;
+	return min;
 }
 
 
