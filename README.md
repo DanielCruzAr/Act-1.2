@@ -6,7 +6,7 @@ Este algoritmo es de complejidad O(n^2) en el peor de los casos pues contiene un
 Este método va comparando cada elemento del arreglo con el siguiente, si el primero es mayor que el segundo se intercambian. 
 Es de complejidad O(n^2) en el peor de los casos, pues igual contiene un ciclo anidado.
 ## Algoritmo merge
-El arreglo principal se va dividiendo en dos subarreglos, los cuales se ordenan y se juntan. Es de complejidad O(n) pues el proceso se repite el mismo número de veces que los elementos de la lista.
+El arreglo principal se va dividiendo en dos subarreglos, los cuales se ordenan y se juntan. Es de complejidad O(n(log(n)))/n log(n)) pues el proceso se va dividiendo en 2 n pasos mientras se recorren n pasos para la ordenación.
 ## Búsqueda secuencial
 Busca la clave introducida explorando uno a uno los elementos de la lista. 
 Como utiliza un solo ciclo "for" la complejidad es de O(n) pues la operación se repite el mismo número de veces que los elementos de la lista.
