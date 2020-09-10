@@ -142,10 +142,6 @@ T Sorts<T>::busqBinaria(vector<T> &v, int n){
 	min = 0;
 	max = v.size() - 1;
 	
-	if(n==197){ //NO HAY NINGÚN 197 EN NINGUNA LISTA DEL MAIN
-		return 3;
-	}
-	
 	while(min <= max){
 		central = (min + max)/2;
 		valC = v[central];
